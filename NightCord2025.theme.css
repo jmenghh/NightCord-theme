@@ -1,0 +1,89 @@
+/**
+ * @name OldCord with Nightcord
+ * @version 1.0
+ * @description Restores Discord's 2020 UI with Nightcord color theme
+ * @author milbit + seilent (modified)
+ * @source https://github.com/milbits/oldcord
+ * @license MIT
+ */
+
+ @import url("https://milbits.github.io/oldcord/src/main.css");
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Nunito:wght@400;600&display=swap');
+ 
+ /*Base css*/
+ @import url('https://seilent.github.io/nightcord/sekai/base/base.css');
+ 
+ /*Server Hide (Bugged)*/
+ /*@import url(https://seilent.github.io/discord-serverlist-drawer/drawer.theme.css);*/
+ 
+ :root {
+     --font-primary: "Nunito";
+     --font-japanese: "Noto Sans JP";
+ 
+     /*Use HSL color*/
+     --accent-hue: 253;
+     --accent-saturation: 25%;
+     --accent-light: 28%;
+ 
+     /* change the name into other icon
+        currently available : genshin element and nightcord*/
+     --icon: var(--icon-nightcord);
+ }
+ 
+ :root {
+     /* Re-adds the animation for reactions. Might look weird | 0 - off | 1 - on*/
+     --reaction-animation: 0;
+ }
+ 
+/* @import url("https://milbits.github.io/oldcord/src/main.css"); */
+
+/* === NightCord 스타일 요소 병합 === */
+
+:root {
+  --font-weight: 400 !important;
+  --nightcord-accent: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2), calc(var(--accent-light) * 1.6)) !important;
+  --nightcord-dark: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.2), calc(var(--accent-light) / 1.2)) !important;
+  --nightcord-light: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.2), calc(var(--accent-light) * 1.5)) !important;
+  --channels-default: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 60%) !important;
+  --text-bright: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1), 85%) !important;
+  --text-normal: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), calc((100% - var(--accent-light)) * 1.30)) !important;
+  --text-muted: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.8), calc((100% - var(--accent-light)) * 0.9)) !important;
+  --text-link: hsl(var(--accent-hue), calc(var(--accent-saturation) * 2.5), 90%) !important;
+  --text-dark: hsl(var(--accent-hue), calc(var(--accent-saturation) / 5), calc(var(--accent-light) / 1.55)) !important;
+  --background-secondary: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-light)) !important;
+  --background-primary: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.31), calc(var(--accent-light) * 1.25)) !important;
+  --scrollbar-thin-thumb: hsl(var(--accent-hue), calc(var(--accent-saturation) * 1.04), calc(var(--accent-light) / 1.217)) !important;
+  --scrollbar-auto-track: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.19), calc(var(--accent-light) / 1.07)) !important;
+  --brand-color: hsl(var(--accent-hue), calc(var(--accent-saturation) * 1.8), calc(var(--accent-light) * 2.285)) !important;
+  --brand-color-hover: hsl(var(--accent-hue), calc(var(--accent-saturation) * 1.32), calc(var(--accent-light) * 2)) !important;
+  --brand-experiment-30a: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.27), calc(var(--accent-light) / 1.6)) !important;
+  --brand-experiment-200: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.04), calc(var(--accent-light) * 3.42)) !important;
+  --background-secondary-alt: var(--background-secondary) !important;
+  --background-tertiary: var(--background-secondary) !important;
+  --background-modifier-active: var(--nightcord-dark) !important;
+  --background-modifier-accent: var(--nightcord-dark) !important;
+  --background-modifier-selected: var(--background-primary) !important;
+  --background-modifier-hover: var(--nightcord-accent) !important;
+  --channeltextarea-background: var(--background-secondary) !important;
+  --background-accent: var(--background-primary) !important;
+  --background-floating: var(--background-secondary) !important;
+  --scrollbar-auto-thumb: var(--scrollbar-thin-thumb) !important;
+  --scrollbar-auto-scrollbar-color-thumb: var(--scrollbar-thin-thumb) !important;
+  --scrollbar-auto-scrollbar-color-track: var(--scrollbar-auto-track) !important;
+  --interactive-normal: var(--text-normal) !important;
+  --interactive-muted: var(--text-normal) !important;
+  --brand-experiment-15a: var(--scrollbar-thin-thumb) !important;
+  --brand-experiment-560: var(--nightcord-accent) !important;
+  --brand-experiment-600: var(--background-secondary) !important;
+  --background-mentioned: var(--background-secondary) !important;
+  --background-mentioned-hover: var(--background-secondary) !important;
+  --brand-experiment: var(--background-primary) !important;
+  --text-link: var(--text-muted) !important;
+  --deprecated-card-bg: var(--background-secondary) !important;
+  
+}
+
+* {
+  cursor: url(https://cdn.discordapp.com/attachments/780564362196811797/1003847209290322072/ezgif.com-gif-maker_2.gif), auto;
+}
+
