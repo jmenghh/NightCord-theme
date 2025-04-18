@@ -1,0 +1,365 @@
+/**
+* @name NightCord
+* @version V1.1
+* @description A theme made to look like the Nightcord app from Project Sekai!
+* @author Miya(heya puddpudd!)
+* @invite innersloth
+*/
+
+
+/*miku cursor!!!*/
+* {cursor: url(https://cdn.discordapp.com/attachments/780564362196811797/1003847209290322072/ezgif.com-gif-maker_2.gif), auto}
+
+
+/** scrollbar color */
+.chat-2ZfjoI .scroller-kQBbkU::-webkit-scrollbar-track {
+    background-color: #443C59 ;
+}
+
+.chat-2ZfjoI .scroller-kQBbkU::-webkit-scrollbar-thumb {
+    background-color: #322C4B ;
+}
+			
+/** Hide GIFT button */
+.button-f2h6uQ[aria-label="Send a gift"i] {display: none;}
+
+/*Chat box message color*/
+.placeholder-1rCBhr.slateTextArea-27tjG0.fontSize16Padding-XoMpjI{
+    color: #B0AAC9;
+}
+
+/*Open DM color*/
+.interactive-1vLZ_I.interactive-iyXY_x.interactiveSelected-29CP8y.selected-3veCBZ{
+    background: #4F4869;
+}
+
+/*Open channel color*/
+.selected-2TbFuo .content-1gYQeQ{
+    background: #4F4869;
+}
+
+/* Regular File download*/
+
+.downloadButton-2HLFWN {
+    color:transparent !important;
+    background:url("https://cdn.discordapp.com/attachments/780564362196811797/1003808850534727730/why.png") center/cover no-repeat;
+}
+
+.icon-1KCy88 {
+top:-2px;
+left: 1px;
+position: relative;
+    content: url(https://cdn.discordapp.com/attachments/780564362196811797/1003818421009535066/night1.png);
+      background: transparent
+}
+
+.attachment-1PZZB2 {
+    background: #68617E;
+}
+
+.metadata-1E7Z4i {
+    color: #A2A0B5;
+}
+
+/* Music File download*/
+
+.metadataIcon-3QMhu9 {
+    color:transparent !important;
+    background:url("https://cdn.discordapp.com/attachments/780564362196811797/1003808850534727730/why.png") center/cover no-repeat;
+}
+
+.icon-1KCy88 {
+top:-2px;
+left: 1px;
+position: relative;
+    content: url(https://cdn.discordapp.com/attachments/780564362196811797/1003818421009535066/night1.png);
+      background: transparent
+}
+
+.wrapperAudio-1Bzv_Z.wrapper-1FP9YQ.embedWrapper-1MtIDg{
+    background: #68617E;
+}
+
+.audioMetadata-1Hrt8T::before {
+top:-2px;
+left: -1px;
+position: relative;
+    content: url(https://cdn.discordapp.com/attachments/780564362196811797/1003832018666274896/night2.png);
+      background: transparent
+}
+
+
+
+/*attention to detail*/
+.downloadButton-2HLFWN {
+    color:transparent !important;
+    background:url("https://cdn.discordapp.com/attachments/780564362196811797/1003808850534727730/why.png") center/cover no-repeat;
+}
+
+/* Cool button anim*/
+.panels-3wFtMD > .container-YkUktl .flex-2S1XBF > :not(:last-child) {
+    opacity: 0% !important;
+    width: 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+.panels-3wFtMD > .container-YkUktl:hover .flex-2S1XBF > :not(:last-child) {
+    opacity: 100% !important;
+    width: 32px;
+}
+
+/*Cool Colored top  bar*/
+.titleBar-1it3bQ {
+background:#3F365B
+}
+
+/*Chat Box*/
+  :root {
+      --color-brand-lighter: #4981e2;
+    }
+    .input-2g-os5,
+    .scrollableContainer-15eg7h {
+	
+      background-color: #3E365A;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+      border: 1px solid;
+      border-color: #686082;
+    }
+    .input-2g-os5:hover,
+    .scrollableContainer-15eg7h:hover {
+      border-color: #686082;
+      background-color: #3E365A;
+    }
+    .input-2g-os5:focus-within,
+    .scrollableContainer-15eg7h:focus-within {
+      background-color: #3E365A;
+      border-color: #686082;
+    }
+
+[class^="buttons-"] > button[class*="lookBlank-"][class*="grow-"] > div:not([class*="translateButton-"]), /* send a nitro button */
+[class^="buttons-"] > div[class^="buttonContainer"] > button:not([class^="emojiButton"])[class*="lookBlank-"][class*="grow-"] /* send a gif button */
+{
+    display: none;
+}
+
+
+/*Server bar color*/
+.tree-3agP2X {
+    content: "";
+
+    background: #3E365A;
+}
+
+/*Status Colors*/
+
+rect[fill^="hsl(262,"] {fill: #6F2245}
+rect[fill^="hsl(139,"] {fill: #ECA8A5}
+rect[fill^="hsl(38,"] {fill: #8B7482}
+rect[fill^="hsl(359,"] {fill: #704EA9}
+rect[fill^="hsl(214,"] {fill: #DBE8F3}
+
+.description-3Cwkxk {
+    display:none;
+}
+
+
+/*Logo*/
+.wordmarkWindows-2dq6rw svg {
+display:none;
+}
+.wordmarkWindows-2dq6rw::after {
+
+top:-2px;
+left: 1px;
+position: relative;
+    content: url(https://cdn.discordapp.com/attachments/780564362196811797/1003788482931589170/night.png);
+
+}
+
+
+/**Hide Nitro Tab in Home*/
+.privateChannels-oVe7HL [href="/store"] {
+    display: none;
+}
+
+/*animates freind DMs*/
+.interactive-1vLZ_I {
+    transition: all 0.5s;
+}
+
+.interactive-1vLZ_I:hover {
+  background-color: rgba(0, 0, 0, 0);
+  transform: scale(1.1);
+  letter-spacing: 1px;
+}
+
+/* Pop-out Animation */ 
+.menu-1QACrS, .emojiPicker-6YCk8a, .browser-mnQ1T7, .messagesPopoutWrap-3zryHW, .wrapper-1NB3WY, .container-3u7RcY, .container-2o3qEW, .container-2ebMPP, .userPopout-2j1gM4 {
+    animation: custom-menu-animation 250ms ease;
+    transform-origin: top;
+}
+@keyframes custom-menu-animation {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+/* more colors!!!!*/
+.theme-dark {
+     --background-primary: #4F4869;
+    --background-secondary: #3e365a;
+    --background-secondary-alt: #3E365A;
+    --background-tertiary: #3E365A;
+    --background-accent: #3E365A;
+    --background-floating: #3E365A;
+}
+
+.winButton-3UMjdg:nth-child(2) {
+    color: #FF55AA;
+    border-radius: 2000px;
+    background-color: #FF55AA;
+    height: 15px;
+    width: 15px;
+    margin-top: 3px;
+    margin-right: 8px;
+    margin-left: 10px;
+}
+.winButtonMinMax-3RsPUg:nth-child(4):hover {
+    color: #5487FF;
+    border-radius: 2000px;
+    background-color: #5487FF;
+    height: 15px;
+    width: 15px;
+    margin-top: 1px;
+    margin-right: -2px;
+    margin-left: 10px;
+}
+.winButtonMinMax-3RsPUg:nth-child(3):hover {
+    color:rgb(255, 184, 53);
+    border-radius: 200px;
+    background-color:rgb(255, 184, 53);
+    height: 15px;
+    width: 15px;
+    margin-top: 1px;
+    margin-right: -2px;
+    margin-left: 10px;
+}
+.winButton-3UMjdg:nth-child(2):hover {
+    color: #FF55AA;
+    border-radius: 50%;
+    background-color:rgb(255, 70, 70);
+    height: 15px;
+    width: 15px;
+    margin-top: 1px;
+    margin-right: 8px;
+    margin-left: 10px;
+}
+.winButtonMinMax-3RsPUg:nth-child(4) {
+    color:#43DDFF;
+    border-radius: 200px;
+    background-color:#43DDFF;
+    height: 15px;
+    width: 15px;
+    margin-top: 3px;
+    margin-right: -2px;
+    margin-left: 10px;
+}
+.winButtonMinMax-3RsPUg:nth-child(3) {
+    color:#FFDD59;
+    border-radius: 200px;
+    background-color:#FFDD59;
+    height: 15px;
+    width: 15px;
+    margin-top: 3px;
+    margin-right: -2px;
+    margin-left: 10px;
+}
+.winButton-3UMjdg {
+    color: #ff5b5b;
+    transition: all 200ms ease-out;
+    height: 15px;
+    width: 15px;
+    margin-top: 3px;
+    margin-right: -2px;
+    margin-left: 10px;
+}
+.winButton-3UMjdg:hover {
+    background: transparent;
+    transform: rotate(45deg);
+    border-radius: 30px;
+    transition: all 200ms ease-out;
+}
+
+/*home icon*/
+.homeIcon-r0w4ny path { fill: transparent }
+.homeIcon-r0w4ny {
+background: url(https://cdn.discordapp.com/attachments/780564362196811797/1003805720816402482/unknown.png) center/cover no-repeat; /* change the link with your own */
+min-width: 48px;
+min-height: 48px;
+}
+
+/*friends tab bg*/
+.peopleColumn-1wMU14 { fill: transparent }
+.peopleColumn-1wMU14 {
+background: url(https://cdn.discordapp.com/attachments/780564362196811797/1004002644542632087/unknown.png) center/cover no-repeat; 
+min-width: 48px;
+min-height: 48px;
+}
+
+/*settings sidebar*/
+.sidebar-nqHbhN { fill: transparent }
+.sidebarRegionScroller-FXiQOh {
+background: url(https://cdn.discordapp.com/attachments/780564362196811797/1004006471949889657/unknown.png) center/cover no-repeat; 
+min-width: 48px;
+min-height: 48px;
+}
+
+/*emote selector*/
+.contentWrapper-3vHNP2 { fill: transparent }
+.contentWrapper-3vHNP2 {
+background: url(https://cdn.discordapp.com/attachments/780564362196811797/1004008304592306206/unknown.png) center/cover no-repeat; 
+min-width: 48px;
+min-height: 48px;
+}
+
+  :root {
+      --color-brand-lighter: #4981e2;
+    }
+    .input-2g-os5,
+    .inner-1NoIT5 {
+	
+      background-color: #3E365A;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+      border: 1px solid;
+      border-color: #686082;
+    }
+    .input-2g-os5:hover,
+    .inner-1NoIT5:hover {
+      border-color: #686082;
+      background-color: #3E365A;
+    }
+    .input-2g-os5:focus-within,
+    .inner-1NoIT5:focus-within {
+      background-color: #3E365A;;
+      border-color: #686082;
+    }
+	
+/*call screen*/
+.root-22AK9z { fill: transparent }
+.root-22AK9z {
+background: url(https://media.discordapp.net/attachments/780564362196811797/1004104513445167115/unknown.png) center/cover no-repeat; 
+min-width: 48px;
+min-height: 48px;
+}
+
+
+/*user profile*/
+.infoScroller-1QMpon::after  {
+top:50px;
+left: 430px;
+position: relative;
+    content: url(https://cdn.discordapp.com/attachments/780564362196811797/1004112488821956751/logoni.png);
+}

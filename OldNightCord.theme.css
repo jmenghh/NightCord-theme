@@ -1,0 +1,54 @@
+/**
+ * @name NightOldCord
+ * @description NightCord 스타일 + Old UI 병합
+ * @author 당신
+ * @version 1.0
+ */
+
+/* === OldCord 스타일 직접 복붙 === */
+/**
+  * @name OldCord
+  * @version 1.0
+  * @author @milbit
+  * @source https://github.com/milbits/oldcord
+  * @description Restores discord's 2020 UI
+*/
+@import url("https://milbits.github.io/oldcord/src/main.css");
+
+
+/*
+Addons
+remove a "/*" below to enable one
+*/
+
+/*@import url("https://milbits.github.io/oldcord/src/components/oldEmojis.css");*/
+/*@import url("https://milbits.github.io/oldcord/src/components/oldContext.css");*/
+/*@import url("https://milbits.github.io/oldcord/src/components/showEffects.css");*/
+
+/* Options */
+
+:root {
+	/* Re-adds the animation for reactions. Might look weird | 0 - off | 1 - on*/
+	--reaction-animation: 0;
+}
+/* @import url("https://milbits.github.io/oldcord/src/main.css"); */
+
+/* === NightCord 스타일 요소 병합 === */
+:root {
+  --reaction-animation: 0;
+  --background-primary: #4F4869 !important;
+  --background-secondary: #3e365a !important;
+  --background-secondary-alt: #3E365A !important;
+  --background-tertiary: #3E365A !important;
+  --background-accent: #3E365A !important;
+  --background-floating: #3E365A !important;
+  --color-brand-lighter: #4F4869 !important;
+}
+
+* {
+  cursor: url(https://cdn.discordapp.com/attachments/780564362196811797/1003847209290322072/ezgif.com-gif-maker_2.gif), auto;
+}
+
+/* 추가적인 NightCord 스타일 요소들을 여기에 추가하세요. 예: */
+/* .chat-2ZfjoI .scroller-kQBbkU::-webkit-scrollbar-track { background-color: #443C59; } */
+/* ... */
